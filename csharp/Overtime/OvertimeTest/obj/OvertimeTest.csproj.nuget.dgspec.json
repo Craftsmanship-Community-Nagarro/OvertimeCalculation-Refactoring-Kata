@@ -1,33 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {}
+    "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {}
   },
   "projects": {
-    "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {
+    "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+        "projectUniqueName": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
         "projectName": "OvertimeTest",
-        "projectPath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
-        "packagesPath": "C:\\Users\\katrinheiderer\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\obj\\",
+        "projectPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+        "packagesPath": "C:\\Users\\MNicolescu\\.nuget\\packages\\",
+        "outputPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\katrinheiderer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MNicolescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nexus.at-shared50.asw:8080/repository/nuget/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj": {
+                "projectPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -65,6 +69,60 @@
               "version": "[2.4.3, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj",
+        "projectName": "Overtime",
+        "projectPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj",
+        "packagesPath": "C:\\Users\\MNicolescu\\.nuget\\packages\\",
+        "outputPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MNicolescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://nexus.at-shared50.asw:8080/repository/nuget/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

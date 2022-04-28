@@ -1905,6 +1905,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Overtime/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Overtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Overtime.dll": {}
+        }
       }
     }
   },
@@ -6727,44 +6737,54 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Overtime/1.0.0": {
+      "type": "project",
+      "path": "../Overtime/Overtime.csproj",
+      "msbuildProject": "../Overtime/Overtime.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "ApprovalTests >= 5.7.3",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
+      "Overtime >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\katrinheiderer\\.nuget\\packages\\": {}
+    "C:\\Users\\MNicolescu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+      "projectUniqueName": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
       "projectName": "OvertimeTest",
-      "projectPath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
-      "packagesPath": "C:\\Users\\katrinheiderer\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\obj\\",
+      "projectPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+      "packagesPath": "C:\\Users\\MNicolescu\\.nuget\\packages\\",
+      "outputPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\katrinheiderer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MNicolescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nexus.at-shared50.asw:8080/repository/nuget/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj": {
+              "projectPath": "C:\\SourcePlayground\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\Overtime\\Overtime.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
