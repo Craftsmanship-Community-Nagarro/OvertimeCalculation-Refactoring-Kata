@@ -1,1 +1,1 @@
-﻿Overtime -> hoursRate1:1,0_hoursRate2:0
+﻿Overtime -> {"hoursRate1":1.0,"hoursRate2":0}
