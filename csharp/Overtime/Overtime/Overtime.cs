@@ -10,5 +10,10 @@
 
         public decimal hoursRate1 { get; set; }
         public decimal hoursRate2 { get; set; }
+
+        public override string ToString()
+        {
+            return $"hoursRate1:{hoursRate1}_hoursRate2:{hoursRate2}";
+        }
     }
 }
