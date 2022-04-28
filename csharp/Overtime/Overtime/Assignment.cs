@@ -16,5 +16,11 @@ namespace Overtime
 
         public bool isUnionized { get; set; }
         public TimeSpan duration { get; set; }
+
+
+        public override string ToString()
+        {
+            return $"{nameof(Assignment)} -> isUnionized: {isUnionized}, duration: {duration}";
+        }
     }
 }

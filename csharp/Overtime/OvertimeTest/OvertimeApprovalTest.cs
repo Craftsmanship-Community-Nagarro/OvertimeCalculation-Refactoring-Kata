@@ -36,10 +36,6 @@ namespace OvertimeTest
                 new Assignment(true, TimeSpan.FromMinutes(5)) };
 
             CombinationApprovals.VerifyAllCombinations(CompensationCalculator.calculateOvertime, hoursOvertimeTotals, assignments, briefings);
-
-            //TODO Implement Test
-            //Single Verification           -> Approvals.Verify(...);
-            //Combinated Verification       -> CombinationApprovals.VerifyAllCombinations(...);
         }
     }
 }

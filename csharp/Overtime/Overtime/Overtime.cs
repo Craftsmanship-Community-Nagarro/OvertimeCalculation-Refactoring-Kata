@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return $"hoursRate1:{hoursRate1}_hoursRate2:{hoursRate2}";
+            return $"{nameof(Overtime)} -> hoursRate1:{hoursRate1}_hoursRate2:{hoursRate2}";
         }
     }
 }

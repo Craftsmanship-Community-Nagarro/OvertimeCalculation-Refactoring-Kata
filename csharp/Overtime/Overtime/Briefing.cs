@@ -20,5 +20,10 @@ namespace Overtime
         public bool Z3 { get; set; }
         public bool Foreign { get; set; }
         public bool Hbmo { get; set; }
+
+        public override string ToString()
+        {
+            return $"{nameof(Briefing)} -> Watcode: {Watcode}, Z3: {Z3}, Foreign: {Foreign}, Hbmo: {Hbmo}";
+        }
     }
 }
