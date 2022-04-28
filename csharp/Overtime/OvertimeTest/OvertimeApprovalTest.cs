@@ -96,8 +96,7 @@ internal static class Formatter
 /// </summary>
 internal class AssignmentExtension : Assignment
 {
-    internal AssignmentExtension(bool isUnionized, TimeSpan duration)
-        : base(isUnionized, duration)
+    internal AssignmentExtension(bool isUnionized, TimeSpan duration) : base(isUnionized, duration)
     {
     }
 
