@@ -55,25 +55,26 @@ public class OvertimeApprovalTest
     public void TestOvertimeCalculationCombinationsWithMocks()
     {
         var hoursOvertimeTotals = new List<decimal>() { 1.0m, 3.5m, 6.8m };
-
-        var briefing1 = new Mock<Briefing>(true, true, true, true);
-        briefing1.Setup(x => x.ToString()).Returns(Formatter.Format(briefing1.Object));
-        var briefing2 = new Mock<Briefing>(false, true, true, true);
-        briefing2.Setup(x => x.ToString()).Returns(Formatter.Format(briefing2.Object));
-        var briefing3 = new Mock<Briefing>(false, false, true, true);
-        briefing3.Setup(x => x.ToString()).Returns(Formatter.Format(briefing3.Object));
-        var briefings = new List<Briefing>() { briefing1.Object, briefing2.Object, briefing3.Object };
-
-        var assignment1 = new Mock<Assignment>(true, TimeSpan.FromMinutes(1));
-        assignment1.Setup(x => x.ToString()).Returns(Formatter.Format(assignment1.Object));
-        var assignment2 = new Mock<Assignment>(true, TimeSpan.FromMinutes(2));
-        assignment2.Setup(x => x.ToString()).Returns(Formatter.Format(assignment2.Object));
-        var assignment3 = new Mock<Assignment>(true, TimeSpan.FromMinutes(5));
-        assignment3.Setup(x => x.ToString()).Returns(Formatter.Format(assignment3.Object));
-        var assignments = new List<Assignment>() { assignment1.Object, assignment2.Object, assignment2.Object };
+        var briefings = new List<Briefing>() {
+            GetMocked<Briefing>(true, true, true, true),
+            GetMocked<Briefing>(false, true, true, true),
+            GetMocked<Briefing>(false, false, true, true) };
+        var assignments = new List<Assignment>() {
+            GetMocked<Assignment>(true, TimeSpan.FromMinutes(1)),
+            GetMocked<Assignment>(true, TimeSpan.FromMinutes(2)),
+            GetMocked<Assignment>(true, TimeSpan.FromMinutes(5)) };
 
         CombinationApprovals.VerifyAllCombinations(CompensationCalculator.calculateOvertime, Formatter.Format, hoursOvertimeTotals, assignments, briefings);
     }
+
+    private static Mock<T> GetMock<T>(params object[] args) where T : class
+    {
+        var mock = new Mock<T>(args);
+        mock.Setup(x => x.ToString()).Returns(Formatter.Format(mock.Object));
+        return mock;
+    }
+
+    private static T GetMocked<T>(params object[] args) where T : class => GetMock<T>(args).Object;
 }
 
 /// <summary>
