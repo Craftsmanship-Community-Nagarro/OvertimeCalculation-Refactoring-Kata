@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Cnerd2K7oMTS9jaRPslLesTJKkJS8lSpVrNx+QtHvkUcTvQ4YD1kSqs5BNfYOUO++eeeCmR7hmUMju4ppkFXw==",
+  "dgSpecHash": "nw10I+MmdKKzwKGdZGoqIum2y9pZ0A1byogVwZPNcd5wL717djzTd6q04l+JueAMGqpMPhHRGW2wez9vTH9Obg==",
   "success": true,
-  "projectFilePath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+  "projectFilePath": "C:\\Users\\katrinheiderer\\Source\\Repos\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\katrinheiderer\\.nuget\\packages\\approvaltests\\5.7.3\\approvaltests.5.7.3.nupkg.sha512",
     "C:\\Users\\katrinheiderer\\.nuget\\packages\\approvalutilities\\5.7.3\\approvalutilities.5.7.3.nupkg.sha512",

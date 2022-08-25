@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {}
+    "C:\\Users\\katrinheiderer\\Source\\Repos\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {}
   },
   "projects": {
-    "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {
+    "C:\\Users\\katrinheiderer\\Source\\Repos\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+        "projectUniqueName": "C:\\Users\\katrinheiderer\\Source\\Repos\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
         "projectName": "OvertimeTest",
-        "projectPath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
+        "projectPath": "C:\\Users\\katrinheiderer\\Source\\Repos\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\OvertimeTest.csproj",
         "packagesPath": "C:\\Users\\katrinheiderer\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\OvertimeCalculation-Refactoring-Kata2\\csharp\\Overtime\\OvertimeTest\\obj\\",
+        "outputPath": "C:\\Users\\katrinheiderer\\Source\\Repos\\OvertimeCalculation-Refactoring-Kata\\csharp\\Overtime\\OvertimeTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\katrinheiderer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -80,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
