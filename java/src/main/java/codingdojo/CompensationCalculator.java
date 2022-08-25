@@ -10,12 +10,26 @@ public class CompensationCalculator {
 
   public static Overtime calculateOvertime(BigDecimal hoursOvertimeTotal, Assignment assignment, Briefing briefing) {
 
-    if (isOverTimeWithTotal(hoursOvertimeTotal, assignment, briefing)) {
-      return new Overtime(hoursOvertimeTotal, BigDecimal.ZERO);
+    if (assignment.isUnionized()) {
+      if (briefing.hbmo() || briefing.watcode()) {
+        return new Overtime(hoursOvertimeTotal, BigDecimal.ZERO);
+      }
+    } else {
+      if (briefing.foreign()) {
+        return new Overtime(hoursOvertimeTotal, BigDecimal.ZERO);
+      }
+
+      if (!briefing.watcode() && !briefing.z3()) {
+        return new Overtime(hoursOvertimeTotal, BigDecimal.ZERO);
+      }
     }
 
     if (hoursOvertimeTotal.compareTo(BigDecimal.ZERO) < 1) {
       return new Overtime(BigDecimal.ZERO, BigDecimal.ZERO);
+    }
+
+    if (hoursOvertimeTotal.compareTo(MAX_OVERTIME_HOURS_RATE_1) < 1) {
+      return new Overtime(hoursOvertimeTotal, BigDecimal.ZERO);
     }
 
     final BigDecimal hoursOvertimeRate2 = hoursOvertimeTotal.subtract(MAX_OVERTIME_HOURS_RATE_1);
@@ -26,20 +40,6 @@ public class CompensationCalculator {
     }
 
     return new Overtime(MAX_OVERTIME_HOURS_RATE_1, hoursOvertimeRate2);
-  }
-
-  private static boolean isOverTimeWithTotal(BigDecimal hoursOvertimeTotal, Assignment assignment, Briefing briefing) {
-    return isOvertime(assignment, briefing) || hoursOvertimeTotal.compareTo(MAX_OVERTIME_HOURS_RATE_1) < 1;
-  }
-
-  private static boolean isOvertime(Assignment assignment, Briefing briefing) {
-    boolean isWatcodeUnion = briefing.watcode() && assignment.isUnionized();
-    boolean isWatcodeNonUnionForeign = briefing.watcode() && !assignment.isUnionized() && briefing.foreign();
-    return (!briefing.watcode() && !briefing.z3() && !assignment.isUnionized())
-            || (briefing.hbmo() && assignment.isUnionized())
-            || isWatcodeNonUnionForeign
-            || isWatcodeUnion
-            || (briefing.foreign() && !assignment.isUnionized());
   }
 
   private static BigDecimal calculateThreshold(Assignment assignment) {
