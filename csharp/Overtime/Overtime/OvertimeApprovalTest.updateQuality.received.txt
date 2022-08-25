@@ -1,0 +1,1 @@
+﻿[ a common item,0,0] => 
